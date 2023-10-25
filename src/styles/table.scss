@@ -1,0 +1,43 @@
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  font-size: 15px;
+  background: $color-background;
+  height: 100vh;
+  color: $color-white;
+
+  &__head {
+    background-color: $color-yellow;
+    color: $color-background;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__row {
+    background-color: transparent;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $color-yellow !important;
+    }
+  }
+
+  &__cell {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid $color-gray;
+
+    &--head {
+      border: none;
+    }
+
+
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
